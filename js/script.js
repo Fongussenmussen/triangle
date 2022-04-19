@@ -22,16 +22,6 @@ sendValues.onclick = function() {
 	var input2 = document.getElementById('input2').value;
 	var input3 = document.getElementById('input3').value;
 
-
-	console.log(input1);
-	console.log(input2);
-	console.log(input3);
-
-/*	input1 = parseInt(input1);
-	input2 = parseInt(input2);
-	input3 = parseInt(input3);
-*/
-
 	if (isNaN(input1) == true &&
 			isNaN(input2) == true &&
 			isNaN(input3) == true) {
@@ -64,6 +54,10 @@ sendValues.onclick = function() {
 		} */
 		else {
 
+			input1 = parseInt(input1);
+			input2 = parseInt(input2);
+			input3 = parseInt(input3);
+
 			if ((input1 + input2) < input3 ||
 					(input2 + input3) < input1 || 
 					(input3 + input1) < input2 ) {
@@ -81,10 +75,10 @@ sendValues.onclick = function() {
 							 	input3 == input1 ) {
 				document.getElementById('result').innerHTML="<p> Даний трикутник є рівностороннім! </p>";
 		}
-			else {
-				document.getElementById('result').innerHTML="<p> Даний трикутник є рівнобедреним! </p>";
-				}
-			}
+		else {
+			document.getElementById('result').innerHTML="<p> Даний трикутник є рівнобедреним! </p>";
 		}
 	}
+}
+}
 };
