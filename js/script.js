@@ -64,8 +64,8 @@ sendValues.onclick = function() {
 		} */
 		else {
 
-			if ((input1 + input2) < input3 &&
-					(input2 + input3) < input1 && 
+			if ((input1 + input2) < input3 ||
+					(input2 + input3) < input1 || 
 					(input3 + input1) < input2 ) {
 				document.getElementById('result').innerHTML="";
 				alert('Правило існування трикутника не виконується');
