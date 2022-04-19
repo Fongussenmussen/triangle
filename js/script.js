@@ -26,13 +26,12 @@ sendValues.onclick = function() {
 	input2 = parseInt(input2);
 	input3 = parseInt(input3);
 
-// Проверка на СУЩЕСТВОВАНИЕ 
-// Первая ветка
+
 	if (isNaN(input1) === true &&
 			isNaN(input2) === true &&
 			isNaN(input3) === true) {
 		document.getElementById('result').innerHTML="";
-		alert('Введіть сторони трикутника');
+		alert('Невірно вказані сторони трикутника');
 	}
 	else if (isNaN(input1) === true) {
 		document.getElementById('result').innerHTML="";
@@ -80,58 +79,10 @@ sendValues.onclick = function() {
 			else {
 				document.getElementById('result').innerHTML="<p> Даний трикутник є рівнобедреним! </p>";
 				}
-
-
-
-
-
-
 			}
-
-
-
-
 		}
-
-
-
-
-
-
-
-
-
 	}
-
-
-
-
-	console.log(input1);
+/*	console.log(input1);
 	console.log(input2);
-	console.log(input3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	console.log(input3);*/
 };
-
-
-
-
-
-
-
-
-
-
