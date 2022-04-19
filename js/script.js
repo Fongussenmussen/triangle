@@ -9,12 +9,12 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
-window.onclick = function(event) {
+/*window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-
+*/
 ///////////////////////////////////////////////
 
 sendValues.onclick = function() {
@@ -22,35 +22,40 @@ sendValues.onclick = function() {
 	var input2 = document.getElementById('input2').value;
 	var input3 = document.getElementById('input3').value;
 
-	input1 = parseInt(input1);
+
+	console.log(input1);
+	console.log(input2);
+	console.log(input3);
+
+/*	input1 = parseInt(input1);
 	input2 = parseInt(input2);
 	input3 = parseInt(input3);
+*/
 
-
-	if (isNaN(input1) === true &&
-			isNaN(input2) === true &&
-			isNaN(input3) === true) {
+	if (isNaN(input1) == true &&
+			isNaN(input2) == true &&
+			isNaN(input3) == true) {
 		document.getElementById('result').innerHTML="";
 		alert('Невірно вказані сторони трикутника');
 	}
-	else if (isNaN(input1) === true) {
+	else if (isNaN(input1) == true) {
 		document.getElementById('result').innerHTML="";
 		alert('Помилка у текстовому полі №1. Повинне бути записане число');
 	}
-	else if (isNaN(input2) === true) {
+	else if (isNaN(input2) == true) {
 		document.getElementById('result').innerHTML="";
 		alert('Помилка у текстовому полі №2. Повинне бути записане число');
 	}
-	else if (isNaN(input3) === true) {
+	else if (isNaN(input3) == true) {
 		document.getElementById('result').innerHTML="";		
 		alert('Помилка у текстовому полі №3. Повинне бути записане число');
 	}
 	else {
-		if (Math.sign(input1) === -1) {
+		if (Math.sign(input1) == -1) {
 			document.getElementById('result').innerHTML="";			
 			alert('Error');
 		}
-		else if (Math.sign(input2) === -1) {
+		else if (Math.sign(input2) == -1) {
 			document.getElementById('result').innerHTML="";
 			alert('Error');
 		}
@@ -59,8 +64,8 @@ sendValues.onclick = function() {
 		} */
 		else {
 
-			if ((input1 + input2) < input3 ||
-					(input2 + input3) < input1 || 
+			if ((input1 + input2) < input3 &&
+					(input2 + input3) < input1 && 
 					(input3 + input1) < input2 ) {
 				document.getElementById('result').innerHTML="";
 				alert('Правило існування трикутника не виконується');
@@ -71,9 +76,9 @@ sendValues.onclick = function() {
 						input3 != input1 ) {
 					document.getElementById('result').innerHTML="<p> Даний трикутник є різностороннім! </p>";
 			}
-			else if ( input1 === input2 &&
-								input2 === input3 &&
-							 	input3 === input1 ) {
+			else if ( input1 == input2 &&
+								input2 == input3 &&
+							 	input3 == input1 ) {
 				document.getElementById('result').innerHTML="<p> Даний трикутник є рівностороннім! </p>";
 		}
 			else {
@@ -82,7 +87,4 @@ sendValues.onclick = function() {
 			}
 		}
 	}
-/*	console.log(input1);
-	console.log(input2);
-	console.log(input3);*/
 };
