@@ -15,6 +15,7 @@ body {
   border: none;
   cursor: pointer;
   width: 200px;
+
 }
 .butt {
     width: 100%;
@@ -81,9 +82,7 @@ body {
     background-color: #9C27B0;
     color: white;
 }
-
 .modal-body {padding: 2px 16px;}
-
 .triangle-inputs {
     display: flex;
     justify-content: center;
@@ -121,6 +120,14 @@ body {
     color: white;
 }
 
+
+@media screen and (max-width: 1536px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .modal-header h2{text-align: center;}
   .triangle-inputs {flex-wrap: wrap;}
@@ -132,6 +139,9 @@ body {
   body {
     background-size: cover;
     background-position: center;
+  }
+  .modal-content {
+    width: 70%;
   }
 }
 
@@ -148,5 +158,19 @@ body {
   }
 }
 
-
+@media screen and (min-width: 1536px) {
+  #myBtn {
+    transform: scale(2);
+  }
+  .modal {
+    padding-top: 200px;
+  }
+  .modal-content {
+    transform: scale(1.3);
+    width: 40%;
+  }
+  .triangle-description {
+    font-size: 22px;
+  }
+}
 
