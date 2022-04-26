@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
-	<title>Triangle</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
-</head>
-
-<body>
-  <div class="butt">
-    <button id="myBtn">Відкрити вікно</button>
-	</div>
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-      	<h2>Вид трикутника</h2>
-    	</div>
-    	<div class="modal-body">
-        <p class="triangle-description">Введіть три сторони трикутника</p>
-        <div class="triangle-inputs">
-          <input id ="input1" type="text">
-          <input id ="input2" type="text">
-          <input id ="input3" type="text">
-        </div>
-        <div class="submit">
-          <input id="sendValues" type="button" value="Перевірити" >
-        </div>
-        <div id="result"></div>
-      </div>
-    	<div class="modal-footer">
-    		<h3>&#169 2022 Fongussenmussen. All Rights Reserved.</h3>
-    	</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Triangle</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+    <script src="./js/script-1.js" defer></script>
+  </head>
+  <body>
+    <div class="butt">
+      <button id="myBtn">Відкрити вікно</button>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="./js/script-1.js"></script>
-  </div>
-</body>
-
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Вид трикутника</h2>
+        </div>
+        <div class="modal-body">
+          <p class="triangle-description">Введіть три сторони трикутника</p>
+          <div class="triangle-inputs">
+            <input id ="input1" type="text">
+            <input id ="input2" type="text">
+            <input id ="input3" type="text">
+          </div>
+          <div class="submit">
+            <input id="sendValues" type="button" value="Перевірити">
+          </div>
+          <div id="result"></div>
+        </div>
+        <div class="modal-footer">
+          <h3>&#169 2022 Fongussenmussen. All Rights Reserved.</h3>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </div>
+  </body>
 </html>
